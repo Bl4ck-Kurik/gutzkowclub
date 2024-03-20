@@ -39,7 +39,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fafafa;
-  max-width: 1700px;
   margin: auto;
 }
 
