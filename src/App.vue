@@ -4,12 +4,11 @@
       <Head/>
     </v-app-bar>
     <v-main class="content">
-
       <Parallax v-if="$route.meta.showParallax"/>
       <v-container>
         <v-row>
           <v-col cols="8" class="mt-10 mb-10">
-            <h4 class="text-h4 mb-10" v-if="!$route.meta.showParallax">{{ $route.name }}</h4>
+            <h4 class="text-h4 mb-10" v-if="$route.meta.showTitle">{{ $route.name }}</h4>
             <router-view/>
           </v-col>
           <v-col cols="4" class="mt-10">
@@ -57,11 +56,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-
+  background: #3c3c3c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.5);
+  background: #646464;
   border-radius: 5px 0 0 5px;
 }
 

@@ -31,6 +31,14 @@ import '@formkit/themes/genesis'
 
 const app = createApp(App)
 
+app.mixin({
+  watch: {
+    $route(to) {
+      document.title = `Gutzkoclub - ${to.name}`;
+    }
+  }
+})
+
 registerPlugins(app)
 
 app.use(plugin, defaultConfig).mount('#app')

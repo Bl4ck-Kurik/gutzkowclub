@@ -6,9 +6,9 @@
             <v-tab to="/">Wilkommen</v-tab>
             <v-tab to="/vermietung">Vermietung</v-tab>
             <v-tab to="/kontakt">Kontakt</v-tab>
-            <v-tab to="#">Anfahrt</v-tab>
-            <v-tab to="#">Bilder</v-tab>
-            <v-tab to="#">Mitglied werden</v-tab>
+            <v-tab to="/anfahrt">Anfahrt</v-tab>
+            <v-tab to="/bilder">Bilder</v-tab>
+            <v-tab to="/mitglied-werden">Mitglied werden</v-tab>
         </v-tabs>
     </div>
 </template>

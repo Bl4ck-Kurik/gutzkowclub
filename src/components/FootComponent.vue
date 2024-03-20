@@ -1,12 +1,12 @@
 <template>
   <v-footer class="footer pa-0 pt-3">
     <v-row class="footer-wrap ma-0">
-      <v-row>
+      <v-row class="pb-3">
         <v-row class="icons pa-5">
-          <v-btn icon class="social-icon" :href="facebookLink" target="_blank">
+          <v-btn icon class="social-icon" href="https://www.facebook.com/Gutzkow" target="_blank">
             <v-icon>mdi-facebook</v-icon>
           </v-btn>
-          <v-btn icon class="social-icon" :href="instagramLink" target="_blank">
+          <v-btn icon class="social-icon" href="https://www.instagram.com/gutzkowclub/" target="_blank">
             <v-icon>mdi-instagram</v-icon>
           </v-btn>
         </v-row>
@@ -14,13 +14,13 @@
       <v-row class="links w-100 ma-0 pa-5">
         <v-row class="links-inner mb-3">
           <v-col class="footer-link">
-            <a href="#">Kontakt</a>
+            <a href="/kontakt">Kontakt</a>
           </v-col>
           <v-col class="footer-link">
-            <a href="#">Datenschutzerklärung</a>
+            <a href="/datenschutzerklaerung">Datenschutzerklärung</a>
           </v-col>
           <v-col class="footer-link">
-            <a href="#">Impressum</a>
+            <a href="/impressum">Impressum</a>
           </v-col>
         </v-row>
         <p>Copyright © 2024 Gutzkowclub e.V. - Dresdens ältester Studentenclub</p>
@@ -58,6 +58,9 @@
   align-items: center;
   width: 80%;
   margin: 0 !important;
+}
+.footer .v-btn {
+  background-color: rgba(86, 62, 103, 0.5);
 }
 .links {
   display: flex;
